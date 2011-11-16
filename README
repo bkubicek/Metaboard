@@ -1,0 +1,2 @@
+This contains a small script file to convert eagle brd files to CNC-ready output files.
+It uses pcb2gocde, which has some minor changes, and also a shell script, because at least on my machine the linking step fails.

@@ -1,0 +1,8 @@
+S1 M3 G4 P2 ; turn on spindle adjust to your mill 
+M7 
+M8 
+F950 
+G90 
+G21
+G64 P0.08
+G20
