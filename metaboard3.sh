@@ -10,10 +10,10 @@ millhead="0.6"
 pcb_thickness=2.5
 #feedrates mm per minute
 drillfeedrate=200
-cutfeedrate=400
-millfeedrate=900
+cutfeedrate=350
+millfeedrate=1200
 #height to move around
-safe=2
+safe=5
 offset=100
 
 #################################################################
@@ -110,6 +110,6 @@ echo "#######################  Creating paths   ###############"
 $pcb2gcode $OPTS
 mv outp*.png tmp/
 
-mv back.ngc ${basename}_back.ngc
-mv drill.ngc ${basename}_drill.ngc
-mv outline.ngc ${basename}_outline.ngc
+mv -f back.ngc ${basename}_back.ngc
+mv -f drill.ngc ${basename}_drill.ngc
+mv -f outline.ngc ${basename}_outline.ngc
